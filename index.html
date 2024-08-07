@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nathan Trumbull's portfolio showcasing web development projects and career goals.">
+    <title>Portfolio - Nathan Trumbull</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #3c3c3b; /* Dark Slate Gray */
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f2; /* Very Light Gray */
+        }
+        
+        header {
+            background-color: #6b8e23; /* Olive Drab */
+            color: #ffffff; /* White */
+            padding: 10px 0;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: #ffffff; /* White */
+            text-decoration: none;
+        }
+        
+        main {
+            padding: 20px;
+            background-color: #ffffff; /* White */
+        }
+        
+        h1, h2, h3 {
+            color: #8b4513; /* Saddle Brown */
+        }
+        
+        footer {
+            background-color: #8b4513; /* Saddle Brown */
+            color: #ffffff; /* White */
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .project {
+            border: 1px solid #d2b48c; /* Tan */
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: #f0e6d6; /* Light Beige */
+        }
+        
+        .project img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .page {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nathan Trumbull</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" onclick="showPage('portfolio')">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="home" class="page active">
+            <section id="intro">
+                <h2>About Me</h2>
+                <p>I am a college student at Bellevue College with a passion for web management and design. My goal is to become a business owner in this field.</p>
+            </section>
+            <section id="photo">
+                <img src="path-to-your-photo.jpg" alt="Photo of Nathan Trumbull">
+            </section>
+            <section id="concepts">
+                <h2>Key Concepts Learned</h2>
+                <p>Discuss at least three key concepts you've learned in the course.</p>
+            </section>
+        </div>
+        <div id="portfolio" class="page">
+            <section id="projects">
+                <h2>My Web Projects</h2>
+                <article class="project">
+                    <h3>Project Title</h3>
+                    <p>Short description of the project.</p>
+                    <img src="path-to-screenshot.jpg" alt="Screenshot of Project Title">
+                    <a href="link-to-project.html">View Project</a>
+                </article>
+                <!-- Repeat for other projects -->
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Nathan Trumbull</p>
+    </footer>
+    <script>
+        function showPage(pageId) {
+            document.querySelectorAll('.page').forEach(function(page) {
+                page.classList.remove('active');
+            });
+            document.getElementById(pageId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+   
